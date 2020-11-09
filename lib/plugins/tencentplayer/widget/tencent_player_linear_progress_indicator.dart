@@ -326,9 +326,8 @@ class _TencentLinearProgressIndicatorState extends State<TencentLinearProgressIn
   }
 
 
-  /**
-   * 通过assets路径，获取资源图片
-   */
+  /// 通过assets路径，获取资源图片
+
   Future<ui.Image> _loadImage(String assets) async {
     final ByteData data = await rootBundle.load(assets);
     if (data == null) throw 'Unable to read data';
